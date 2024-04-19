@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+<div class="container popup-container" id="blur">
+    <div class="popup">
+        <div class="popup-text">На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</div>
+        <button class="btn popup-btn" id="ok">Ок</button>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <img src="assets/img/homeWorks.png" alt="">
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <div class="container">
+        <div class="account">
+            <div class="main-title" id="main-title">Get your free account</div>
+            <div class="main-info">Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever) anytime.
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="account-info">
+                        <div id="name-box" class="box">
+                            <label for="name" class="label">Full Name</label>
+                            <input type="text" id="name" class="input">
+                            <span class="enter error-text">Введите Full Name</span>
+                            <span class="detail" id="nameError">Full Name может содержать только буквы и пробел</span>
+                        </div>
+                        <div id="username-box" class="box">
+                            <label for="username" class="label">Your username</label>
+                            <input type="text" id="username" class="input">
+                            <span class="enter error-text" >Введите Username</span>
+                            <span class="detail" id="usernameError">Может содержать только буквы, цифры, символ подчеркивания и тире</span>
+                            <span class="detail" id="unregistered">Такой пользователь не зарегистрирован</span>
+                        </div>
+                        <div id="mail-box" class="box">
+                            <label for="mail" class="label">E-mail</label>
+                            <input type="email" id="mail" class="input">
+                            <span class="enter error-text" >Введите email</span>
+                            <span class="detail" id="emailError">Неправильный формат email. Пример: mail@mail.com</span>
+                        </div>
+                        <div id="password-box" class="box">
+                            <label for="password" class="label">Password</label>
+                            <input type="password" id="password" class="input">
+                            <span class="enter error-text">Введите Пароль</span>
+                            <span class="detail" id="passwordError"> Поле пароля должно содержать минимум 8 символов, среди которых есть хотя бы одна буква в верхнем регистре, хотя бы одна буква в нижнем регистре и хотя бы один спецсимвол</span>
+                            <span class="detail" id="wrongPassoword">Неверное имя пользователя или пароль</span>
+                        </div>
+                        <div id="repeat-box" class="box">
+                            <label for="password-repeat" class="label">Repeat Password</label>
+                            <input type="password" id="password-repeat" class="input">
+                            <span class="enter error-text">Повторите Пароль</span>
+                            <span class="detail" id="repeatError">Пароли не совпадают</span>
+                        </div>
+                    </div>
+                    <div class="agreement" id="checkbox-box">
+                        <input type="checkbox" id="terms">
+                        <label for="terms" class="terms-agree">Agree to our Terms of Service and Privacy
+                            Statement</label>
+                    </div>
+                    <span class="checkbox-error error-text" id="termsError">Примите условия соглашения</span>
+                </form>
+                <div class="form-action">
+                    <button class="btn" id="signIn">Sign Up</button>
+                    <button class="btn" id="logIn">Sign In</button>
+                    <button class="btn" id="exit">Exit</button>
+                </div>
+                <div class="question">
+                    <a href="#" id="question">Already have an account?</a>
+                </div>
+                <div class="question" id="Reg">
+                    <a href="#" id="registration">Registration</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-image">
+            <img src="assets/img/rocket.png" alt="">
+        </div>
+    </div>
+</main>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
